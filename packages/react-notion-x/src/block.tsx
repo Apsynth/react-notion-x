@@ -365,11 +365,17 @@ export const Block: React.FC<BlockProps> = (props) => {
       //page title takes the h1 so all header blocks are greater
       if (isH1) {
         headerBlock = (
+          <h1 className={classNameStr} data-id={id}>
+            {innerHeader}
+          </h1>
+        )
+      } else if (isH2) {
+        headerBlock = (
           <h2 className={classNameStr} data-id={id}>
             {innerHeader}
           </h2>
         )
-      } else if (isH2) {
+      } else if (isH3) {
         headerBlock = (
           <h3 className={classNameStr} data-id={id}>
             {innerHeader}
