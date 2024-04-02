@@ -11,7 +11,7 @@
   },
   "author": "Travis Fischer <travis@transitivebullsh.it>",
   "license": "MIT",
-  "version": "6.15.8",
+  "version": "6.15.10",
   "engines": {
     "node": ">=12"
   },
@@ -39,7 +39,6 @@
     "bootstrap": "lerna bootstrap",
     "predeploy": "run-s build",
     "deploy": "lerna publish",
-    "preinstall": "node -e \"if (process.env.npm_execpath.indexOf('yarn') < 0) throw new Error('this package requires yarn for development')\"",
     "postinstall": "run-s bootstrap",
     "prepare": "husky install",
     "pre-commit": "lint-staged"
