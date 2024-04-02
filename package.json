@@ -1,6 +1,6 @@
 {
   "name": "@apsynth/react-notion-x",
-  "private": false,
+  "private": true,
   "description": "",
   "repository": {
     "type": "git",
